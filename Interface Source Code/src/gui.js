@@ -10,6 +10,8 @@ const charPath = path.resolve(process.env.PORTABLE_EXECUTABLE_DIR, 'Resources', 
 // const charPath = path.join(__dirname, '..', '..', 'Stream Tool', 'Resources', 'Characters');
 
 //yes we all like global variables
+let stateP1 = "";
+let stateP2 = "";
 let charP1 = "Random";
 let charP2 = "Random";
 let skinP1 = "";
@@ -27,8 +29,12 @@ const viewport = document.getElementById('viewport');
 
 const p1NameInp = document.getElementById('p1Name');
 const p1TagInp = document.getElementById('p1Tag');
+const p1PronInp = document.getElementById('p1Pron');
+const p1StateInp = document.getElementById('p1State');
 const p2NameInp = document.getElementById('p2Name');
 const p2TagInp = document.getElementById('p2Tag');
+const p2PronInp = document.getElementById('p2Pron');
+const p2StateInp = document.getElementById('p2State');
 
 const charImgP1 = document.getElementById('p1CharImg');
 const charImgP2 = document.getElementById('p2CharImg');
@@ -118,6 +124,8 @@ function init() {
     p1TagInp.addEventListener("input", resizeInput);
     p2TagInp.addEventListener("input", resizeInput);
 
+    p1PronInp.addEventListener("input", resizeInput);
+    p2PronInp.addEventListener("input", resizeInput);
 
     //set click listeners to change the "best of" status
     document.getElementById("bo3Div").addEventListener("click", changeBestOf);
@@ -142,6 +150,7 @@ function init() {
     //set a listener for the forceWL check
     forceWL.addEventListener("click", forceWLtoggles);
 
+    document.getElementById("copyMatch").addEventListener("click", copyMatch);
 
     /* KEYBOARD SHORTCUTS */
 
@@ -291,7 +300,7 @@ function charImgChange(charImg, charName, skinName = `${charName} (1)`) {
     if (charName != "Random") {
         charImg.setAttribute('src', charPath + '/Renders/' + charName + '/' + skinName + '.png');
     } else {
-        charImg.setAttribute('src', charPath + '/Renders/' + charName + '/' + skinName + '.png');
+        charImg.setAttribute('src', charPath + '/Renders/Random.png');
     }
 }
 
@@ -655,18 +664,30 @@ function checkRound() {
 function swap() {
     let tempP1Name = p1NameInp.value;
     let tempP1Team = p1TagInp.value;
+    let tempP1Pron = p1PronInp.value;
+	let tempP1State = p1StateInp.value;
     let tempP2Name = p2NameInp.value;
     let tempP2Team = p2TagInp.value;
+    let tempP2Pron = p2PronInp.value;
+	let tempP2State = p2StateInp.value;
 
     p1NameInp.value = tempP2Name;
     p1TagInp.value = tempP2Team;
+    p1PronInp.value = tempP2Pron;
+	p1StateInp.value = tempP2State;
     p2NameInp.value = tempP1Name;
     p2TagInp.value = tempP1Team;
+    p2PronInp.value = tempP1Pron;
+	p2StateInp.value = tempP1State;
 
     changeInputWidth(p1NameInp);
     changeInputWidth(p1TagInp);
+    changeInputWidth(p1PronInp);
+	changeInputWidth(p1StateInp);
     changeInputWidth(p2NameInp);
     changeInputWidth(p2TagInp);
+    changeInputWidth(p2PronInp);
+	changeInputWidth(p2StateInp);
 
 
     let tempP1Char = charP1;
@@ -693,12 +714,21 @@ function clearPlayers() {
     //clear player texts
     p1TagInp.value = "";
     p1NameInp.value = "";
+    p1PronInp.value = "";
+	p1StateInp.value = "";
     p2TagInp.value = "";
     p2NameInp.value = "";
+    p2PronInp.value = "";
+	p2StateInp.value = "";
+    roundInp.value = "";
     changeInputWidth(p1TagInp);
     changeInputWidth(p1NameInp);
+    changeInputWidth(p1PronInp);
+	changeInputWidth(p1StateInp);
     changeInputWidth(p2TagInp);
     changeInputWidth(p2NameInp);
+    changeInputWidth(p2PronInp);
+	changeInputWidth(p2StateInp);
 
     //reset characters to random
     document.getElementById('p1CharSelector').setAttribute('src', charPath + '/CSS/Random.png');
@@ -754,23 +784,53 @@ function forceWLtoggles() {
 }
 
 
+function copyMatch() {
+
+    //initialize the string
+    let copiedText = document.getElementById('tournamentName').value + " " + roundInp.value + " - ";
+
+    if (p1TagInp.value) {
+        copiedText += p1TagInp.value + " | ";
+    }
+    copiedText += p1NameInp.value + " (" + charP1 +") Vs. ";
+    if (p2TagInp.value) {
+        copiedText += p2TagInp.value + " | ";
+    }
+    copiedText += p2NameInp.value + " (" + charP2 +")";
+// } else {
+//     if(tNameInps[0] == "" && tNameInps == ""){
+//         copiedText += 
+//     }
+//     copiedText += tNameInps[0].value + " Vs " + tNameInps[1].value;
+// }
+// copiedText += " - " + roundInp.value + " - " + document.getElementById('tournamentName').value;
+
+//send the string to the user's clipboard
+navigator.clipboard.writeText(copiedText);
+}
+
+
 //time to write it down
 function writeScoreboard() {
 
     let scoreboardJson = {
         p1Name: p1NameInp.value,
         p1Team: p1TagInp.value,
+        p1Pron: p1PronInp.value,
+		p1State: p1StateInp.value,
+        p1Score: checkScore(p1Win1, p1Win2, p1Win3),
         p1Character: charP1,
         p1Skin: skinP1,
         p1Color: colorP1,
-        p1Score: checkScore(p1Win1, p1Win2, p1Win3),
         p1WL: currentP1WL,
         p2Name: p2NameInp.value,
         p2Team: p2TagInp.value,
+        p2Pron: p2PronInp.value,
+		p2State: p2StateInp.value,
+        p2Score: checkScore(p2Win1, p2Win2, p2Win3),
         p2Character: charP2,
         p2Skin: skinP2,
         p2Color: colorP2,
-        p2Score: checkScore(p2Win1, p2Win2, p2Win3),
         p2WL: currentP2WL,
         bestOf: currentBestOf,
         round: roundInp.value,
@@ -791,7 +851,7 @@ function writeScoreboard() {
     //simple .txt files
     fs.writeFileSync(mainPath + "/Simple Texts/Player 1.txt", p1NameInp.value);
     fs.writeFileSync(mainPath + "/Simple Texts/Player 2.txt", p2NameInp.value);
-
+	
     fs.writeFileSync(mainPath + "/Simple Texts/Round.txt", roundInp.value);
     fs.writeFileSync(mainPath + "/Simple Texts/Tournament Name.txt", document.getElementById('tournamentName').value);
 

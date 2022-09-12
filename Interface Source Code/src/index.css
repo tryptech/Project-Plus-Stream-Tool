@@ -65,6 +65,32 @@ input[type="text"] {
   border-color: var(--focused);
 }
 
+#copyMatch {
+  background-color: var(--bg4);
+  height: 30px;
+  width: 220px;
+  margin-left: 10px;
+  margin-top: 3px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid var(--focused);
+  transition: border-color 100ms;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+}
+
+#copyMatch:hover {
+  border-color: var(--selected);
+  cursor: pointer;
+}
+
+#copyMatch:active {
+  background-color: #2b2b2b;
+}
+
+
 
 /* main viewport */
 #viewport {
@@ -142,6 +168,29 @@ input[type="text"] {
   max-width: 174px;
   width: 60px;
   border-radius: 0px;
+}
+
+#p1Pron, #p2Pron {
+  float: left;
+  min-width: 40px;
+  max-width: 75px;
+  width: 40px;
+  border-radius: 0px;
+}
+
+#p1State, #p2State {
+    float: left;
+    width: 50px;
+    height: 30px;
+    color: var(--text1);
+    background: var(--bg4);
+    cursor: pointer;
+    position: relative;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid var(--bg4);
+    box-sizing: border-box;
+    outline: none;
 }
 
 .pColor {
@@ -302,7 +351,7 @@ input[type="text"] {
   margin-left: 12px;
   padding: 3px;
   background-color: var(--bg4);
-  height: 60px;
+  height: 88px;
   box-sizing: border-box;
   border-radius: 3px;
   border: 1px solid var(--bg4);
