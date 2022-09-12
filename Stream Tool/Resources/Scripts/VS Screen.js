@@ -8,7 +8,7 @@ const introDelay = .5; //all animations will get this delay when the html loads 
 
 //max text sizes (used when resizing back)
 const roundSize = '54px';
-const tournamentSize = '36px';
+const tournamentSize = '80px';
 const casterSize = '36px';
 const twitterSize = '26px';
 
