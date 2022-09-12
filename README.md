@@ -14,7 +14,6 @@ So you're interested in doing Project+ streams, huh? Luckily for you, with this 
 - A [VS Screen](https://media.discordapp.net/attachments/913208498676973619/1018915195709554748/Screenshot_2022-09-12_11-04-57.png?width=1202&height=676) is also included, to be used in pauses between games.
 - Easy to customize! Made in html/javascript, every file can be edited at will!
 - This is **not** a Stream Control clone. It doesn't have anything to do with it, everything is custom made.
-- If you have any feedback, whether it's an issue with the program or a feature you'd like to see in a future release, you can write down your suggestions in [this form](https://forms.gle/2TLLcnd1nxtHohZs5)
 
 ---
 
