@@ -10,7 +10,7 @@ So you're interested in doing Project+ streams, huh? Luckily for you, with this 
 ## Features
 - [Handy interface](https://media.discordapp.net/attachments/913208498676973619/1018910167817007136/Untitled.png) to quickly change everything you need, like player names, characters, scores, round, casters...
 - Easy and fast setup using a browser source. Drag and drop!
-- A game overlay for both [16:9](https://pbs.twimg.com/media/E92NbjHWUAE0lxY?format=jpg&name=large) and [4:3](https://media.discordapp.net/attachments/913208498676973619/1018911365076897894/Screenshot_2022-09-12_10-49-02.png?width=1202&height=676) is included, with renders and stock icons for all characters and skins!
+- A game overlay for both [16:9](https://media.discordapp.net/attachments/913208498676973619/1018920716609007656/Screenshot_2022-09-12_11-26-45.png?width=1202&height=676) and [4:3](https://media.discordapp.net/attachments/913208498676973619/1018911365076897894/Screenshot_2022-09-12_10-49-02.png?width=1202&height=676) is included, with renders and stock icons for all characters and skins!
 - A [VS Screen](https://media.discordapp.net/attachments/913208498676973619/1018915195709554748/Screenshot_2022-09-12_11-04-57.png?width=1202&height=676) is also included, to be used in pauses between games.
 - Easy to customize! Made in html/javascript, every file can be edited at will!
 - This is **not** a Stream Control clone. It doesn't have anything to do with it, everything is custom made.
