@@ -1,19 +1,17 @@
-![preview](https://cdn.discordapp.com/attachments/799303953912168469/881011199783895120/unknown.png)
+![preview](https://media.discordapp.net/attachments/913208498676973619/1018908761504612412/Untitled.png)
 
 # Project+ Stream Tool
 *Also available for [Melee](https://github.com/Readek/Melee-Stream-Tool), [Ultimate](https://github.com/pokeroby_beto/Ultimate-Stream-Tool), [Rivals of Aether](https://github.com/Readek/RoA-Stream-Tool) and [Rushdown Revolt](https://github.com/Readek/Rushdown-Revolt-Stream-Tool)!*
 
 So you're interested in doing Project+ streams, huh? Luckily for you, with this tool you'll be able to update all the variables you need for the provided overlays with the provided GUI, and easily customize the overlays to make them your own! 
 
-The tool is free, but if you want to keep supporting the project and other Smash and non related stuff, you can donate me something on [Paypal](https://www.paypal.me/robertof2712). Thanks in advance!
-
 ---
 
 ## Features
-- [Handy interface](https://cdn.discordapp.com/attachments/799303953912168469/881017042038321192/unknown.png) to quickly change everything you need, like player names, characters, scores, round, casters...
+- [Handy interface](https://media.discordapp.net/attachments/913208498676973619/1018910167817007136/Untitled.png) to quickly change everything you need, like player names, characters, scores, round, casters...
 - Easy and fast setup using a browser source. Drag and drop!
-- A game overlay for both [16:9](https://pbs.twimg.com/media/E92NbjHWUAE0lxY?format=jpg&name=large) and [4:3](https://pbs.twimg.com/media/E92NbJ7XMAIyAWb?format=jpg&name=large) is included, with renders and stock icons for all characters and skins!
-- A [VS Screen](https://pbs.twimg.com/media/E92NaovWQAQ8hN3?format=jpg&name=large) is also included, to be used in pauses between games.
+- A game overlay for both [16:9](https://pbs.twimg.com/media/E92NbjHWUAE0lxY?format=jpg&name=large) and [4:3](https://media.discordapp.net/attachments/913208498676973619/1018911365076897894/Screenshot_2022-09-12_10-49-02.png?width=1202&height=676) is included, with renders and stock icons for all characters and skins!
+- A [VS Screen](https://media.discordapp.net/attachments/913208498676973619/1018915195709554748/Screenshot_2022-09-12_11-04-57.png?width=1202&height=676) is also included, to be used in pauses between games.
 - Easy to customize! Made in html/javascript, every file can be edited at will!
 - This is **not** a Stream Control clone. It doesn't have anything to do with it, everything is custom made.
 - If you have any feedback, whether it's an issue with the program or a feature you'd like to see in a future release, you can write down your suggestions in [this form](https://forms.gle/2TLLcnd1nxtHohZs5)
@@ -21,7 +19,7 @@ The tool is free, but if you want to keep supporting the project and other Smash
 ---
 
 ## Setup Guide
-You can watch [this video](https://www.youtube.com/watch?v=417QjymeOMk) I made or follow the steps below. (It is for Smash Ultimate but it's the same thing).
+You can watch [this video](https://www.youtube.com/watch?v=417QjymeOMk) beto made or follow the steps below. (It is for Smash Ultimate but it's the same thing).
 
 These are instructions for regular OBS Studio, but I imagine you can do the same with other streaming software:
 - Dowmload the ZIP file.
@@ -61,12 +59,12 @@ While to change the position of the icons and writings you should modify parts o
 
 ## Credits
 
-The "Project+ Stream Tool" was made by [beto](https://twitter.com/pokeroby_beto). 
+The "Project+ Stream Tool" was made by [beto](https://twitter.com/pokeroby_beto), with edits by ilikepizza107.
 
 This is an upgraded version of the [Melee Stream Tool](https://github.com/Readek/Melee-Stream-Tool) made by [Readek](https://twitter.com/Readeku).
 
 The scoreboard was made by [beto](https://twitter.com/pokeroby_beto). 
 
-All the renders were taken from [Streameta](https://streameta.com/games/#PPlus)
+All the renders were taken from the Project+ Dolphin HD Textures
 
-For any feedback you can fill [this form](https://forms.gle/2TLLcnd1nxtHohZs5) or contact [beto](https://twitter.com/pokeroby_beto) on Twitter.
+For any feedback contact [ilikepizza107](675031793686282276) on Discord.
