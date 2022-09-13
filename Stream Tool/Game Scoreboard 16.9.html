@@ -140,6 +140,24 @@
             color: #ffffff;
         }
 
+        .pronouns {
+            color: #ffffff;
+            font-style: italic;
+        }
+
+        .pState {
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+        }
+        #p1State {
+            left: 450px;
+            scale: 0.72;
+        }
+        #p2State {
+            right: -100px;
+            scale: 0.72;
+        }
 
         .scores {
             position: absolute;
@@ -403,6 +421,7 @@
         <img class="sagaIcon" id="sagaIconP1">
         <div class="pCharaMask">
             <img id="p1Character" class="pCharacter">
+            <img id="p1State" class="pState">
         </div>
 
         <img id="teamLogoP1" class="teamLogo">
@@ -410,6 +429,7 @@
         <span id="p1Wrapper" class="wrappers">
             <span id="p1Team" class="teams"></span>
             <span id="p1Name" class="names"></span>
+            <span id="p1Pron" class="pronouns"></span>
         </span>
     </div>
     
@@ -450,6 +470,7 @@
         <div class="pCharaMask">
             <div class="absol">
                 <img id="p2Character" class="pCharacter"/>
+                <img id="p2State" class="pState">
             </div>
         </div>
 
@@ -458,6 +479,7 @@
         <span id="p2Wrapper" class="wrappers">
             <span id="p2Team" class="teams"></span>
             <span id="p2Name" class="names"></span>
+            <span id="p2Pron" class="pronouns"></span>
         </span>
     </div>
 
