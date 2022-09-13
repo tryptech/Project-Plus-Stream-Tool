@@ -6,7 +6,7 @@
 
     <script src="Resources/Scripts/VS Screen.js"></script>
     <script src="Resources/Scripts/gsap.min.js"></script>
-    
+
 
     <style>
         @font-face {
@@ -66,7 +66,7 @@
             height: 130px;
             bottom: 30px;
             line-height: 90px;
-            font-family: "Project+";
+            font-family: "Deansgate";
             text-align: center;
             white-space: nowrap;
             opacity: 0;
@@ -79,14 +79,14 @@
         }
 
         .name {
-            color: #001601;
-            filter: drop-shadow(0px 0px 2px #17ecad);
-            
+            color: #ffffff;
+            filter: drop-shadow(0px 0px 10px #000000);
+
         }
         .team {
             color: #ffffff;
             filter: drop-shadow(0px 0px 0px #002b14);
-            
+
         }
 
 
@@ -96,7 +96,7 @@
             height: 120px;
             bottom: -20px;
             line-height: 90px;
-            font-family: "Project+";
+            font-family: "Deansgate";
             text-align: center;
             font-size: 50px;
             text-transform: capitalize;
@@ -112,15 +112,15 @@
             color: #ffffff;
         }
         .pCharInfo {
-            color: #17ecad;
-            filter: drop-shadow(0px 0px 2px #001601);
+            color: #ffffff;
+            filter: drop-shadow(0px 0px 10px #000000);
         }
 
 
         .roundInfo {
             position: absolute;
             text-align: center;
-            font-family: "Project+";
+            font-family: "Deansgate";
         }
 
         #round {
@@ -128,20 +128,20 @@
             height: 70px;
             left: 710px;
             top: 125px;
-            color: #001601;
-            filter: drop-shadow(0px 0px 2px #17ecad);
+            color: #ffffff;
+            filter: drop-shadow(0px 0px 10px #000000);
             line-height: 38px;
         }
 
         #tournament {
-            width: 565px;
+            width: 1265px;
             height: 100px;
-            left: 678px;
-            top: 13px;
+            left: 327px;
+            top: 13px;			
             color: rgb(255, 255, 255);
-            font-size: 200px;
+			font-size: 200px;
             line-height: 100px;
-            filter: drop-shadow(0px 0px 2px #001601);
+            filter: drop-shadow(0px 0px 10px #001601);
         }
 
 
@@ -151,11 +151,11 @@
         }
         #caster1 {
             position: absolute;
-            left: 315px;
+            left: 515px;
         }
         #caster2 {
             position: absolute;
-            left: 1330px;
+            left: 1130px;
         }
         .casterTextBox {
             position: absolute;
@@ -166,15 +166,15 @@
         .casterIcon {
             height: 30px;
             width: 30px;
-            fill: #012d15;
-            filter: drop-shadow(0px 0px 2px #17ecad);
+            fill: #ffffff;
+            filter: drop-shadow(0px 0px 10px #000000);
             transform: translate(3px, 2px);
         }
         .casterText {
-            font-size: 22px;
-            font-family: "Project+";
-            color: #012d15;
-            filter: drop-shadow(0px 0px 2px #17ecad);
+            font-size: 70px;
+            font-family: "Deansgate";
+            color: #ffffff;
+            filter: drop-shadow(0px 0px 10px #000000);
         }
 
         .casterTwitterBox {
@@ -206,11 +206,11 @@
             transform: translateY(2px);
         }
         .socialText {
-            font-size: 18px;
-            font-family: "Project+";
+            font-size: 28px;
+            font-family: "Deansgate";
             color: #ffffff;
             filter: drop-shadow(0px 0px 2px #001601);
-            
+
         }
     </style>
 </head>
@@ -235,7 +235,7 @@
     </div>
 
     <img src="Resources/Overlay/VS Screen/layer.png" class="absol"/>
-    
+
     <div id="playerTexts">
         <span id="p1Wrapper" class="wrappers">
             <span id="p1Team" class="team"></span>
@@ -274,7 +274,7 @@
                 </svg>
                 <span id="caster1N" class="casterText"></span>
             </div>
-            
+
             <div id="caster1SocialBox" class="casterSocialBox">
                 <div id="caster1TwitterBox" class="casterTwitterBox">
                     <svg class="twitterIcon" viewBox="0 0 20 20">
@@ -304,7 +304,7 @@
                 </svg>
                 <span id="caster2N" class="casterText"></span>
             </div>
-            
+
             <div id="caster2SocialBox" class="casterSocialBox">
                 <div id="caster2TwitterBox" class="casterTwitterBox">
                     <svg class="twitterIcon" viewBox="0 0 20 20">
@@ -326,6 +326,6 @@
         </div>
 
     </div>
-    
+
 </body>
 </html>

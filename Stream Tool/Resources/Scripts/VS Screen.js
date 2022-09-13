@@ -8,7 +8,7 @@ const introDelay = .5; //all animations will get this delay when the html loads 
 
 //max text sizes (used when resizing back)
 const roundSize = '54px';
-const tournamentSize = '80px';
+const tournamentSize = '200px';
 const casterSize = '36px';
 const twitterSize = '26px';
 
@@ -574,5 +574,9 @@ async function updateChar(pCharacter, pSkin, color, charID, direction) {
 	//to position the character
 	charEL.style.left = charPos[0] + "px";
 	charEL.style.top = charPos[1] + "px";
-	charEL.style.transform = "scale(" + charPos[2] + ")";
+    if (charEL == document.getElementById("charP1")) {
+        charEL.style.transform = "scale(" + charPos[2] + ") rotateY(0deg)";
+    } else {
+        charEL.style.transform = "scale(" + charPos[2] + ") rotateY(0deg)";
+    }
 }
